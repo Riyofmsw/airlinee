@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+nav{
+    background-image: url("../images/airplane-wing.jpeg");
+    background-position: left;
+    font-size: 3rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -1%;
+    padding: 6% 0% 6% 0%;
+    color: white;
+}
+main.airlines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.airline-card {
+    max-width: 100%;
+    /* position: relative; */
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-box-direction: normal; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    /* border-radius: 0.25rem; */
+    width: 25%;
+    margin: 2% 2% 2% 2%;
+}
+img.card-img-top {
+    width: 100%;
+}
+
+.card-body {
+    padding: 5%;
+}

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>GCC's Low-cost Airlines</title></head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <body>
+        <nav>
+            <strong> GCC's Low cost </strong><br>
+            <strong> Aireline</strong>
+        </nav>
+        <main class="airlines">
+            {%for (airline,image),url in data %}
+            <div class="airline-card">
+                <img class="card-img-top" src="{{images_path}}/{{image}}" alt="Card image cap">
+                <div class="card-body">
+                    <a href="{{url_for('airline', airline=url)}}">{{airline}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </main>
+    </body>
+</html>

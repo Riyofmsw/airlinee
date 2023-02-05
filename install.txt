@@ -1,0 +1,9 @@
+To install the modules for the project, you need to have pip modules managers and if you donnot have it you can install 
+it by:
+https://www.youtube.com/watch?v=c_qNC1lL4qA
+
+You can go to the path of the the project in cmd and run the command:
+pip install -r requiremnts.txt
+After installing it, you can run the app via the command:
+
+python main.py
